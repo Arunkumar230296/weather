@@ -8,6 +8,10 @@
   </head>
   <body>
     <div class="container">
+         <div class="container">
+      <div style="text-align: right;">
+        <button id="logout-button" style="padding: 6px 12px; margin: 10px;">Logout</button>
+      </div>
       <h1>Simple Weather App</h1>
       <p>based on OpenWeatherAPI</p>
       <div class="one">
@@ -25,6 +29,18 @@
       </div>
     </div>
     <footer>Designed & Built by Arun</footer>
+    <s>
+   <script>
+
+  document.getElementById("logout-button").addEventListener("click", () => {
+    // Clear login-related data (optional: localStorage/sessionStorage)
+    localStorage.removeItem("isLoggedIn");
+    sessionStorage.removeItem("isLoggedIn");
+
+    // Redirect to login page
+    window.location.href = "https://arunkumar230296.github.io/login-supabase/";
+  });
+ </script>
     <script src="script.js"></script>
   </body>
 </html>
