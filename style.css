@@ -64,3 +64,11 @@ footer {
   margin-top: 20px;
   font-size: 0.8rem;
 }
+.logout-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 500px;
+  padding: 10px;
+}

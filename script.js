@@ -1,13 +1,4 @@
- document.getElementById("logout-button").addEventListener("click", async () => {
-        const { error } = await supabaseClient.auth.signOut();
-        if (error) {
-          alert("Logout failed: " + error.message);
-        } else {
-          window.location.href = "https://arunkumar230296.github.io/login-supabase/"; // Redirect to login after logout
-        }
-      });
-      
-      
+
   document.getElementById('searchButton').addEventListener('click', () => {
   const city = document.getElementById('cityInput').value;
   const apiKey = 'ad57f37d1c1b0a0d9d9e833c5b05b7ca';
